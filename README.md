@@ -4,6 +4,7 @@ Algorithm Analysis and design 2021/2022 Code examples implemeneted using golang
 ## Why Golang?
 * Low Level programming language
 * Awesome garbage collector
+* Super fast!
 * Why Not?
 
 ## Contact
