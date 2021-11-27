@@ -6,7 +6,7 @@ import "fmt"
 // 	Find where e = 8
 // 	constrains: b = 2
 // 	base case:
-// 	resursive call limit e = 1 // return 0
+// 	resursive call limit e = 1 // return 1
 
 func solution(b, e int) int { // o(N)
 	if e == 1 {
