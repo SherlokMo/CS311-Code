@@ -12,9 +12,9 @@ import "fmt"
 			if A[mid] = target:
 				return mid
 			else if A[mid] > target:
-				high = mid - 1
+				high <- mid - 1
 			else:
-				low = mid + 1
+				low <- mid + 1
 		endwhile
 
 		return -1
