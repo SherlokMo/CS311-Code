@@ -9,7 +9,9 @@ import "fmt"
 // Algorithm even(k):
 //	if k <- 1:
 //		return 2
-//	return even(k <- k - 1) + 2
+//	else:
+//		k <- k - 1
+//		return even(k) + 2
 
 func even(k int) int {
 	if k == 1 {
