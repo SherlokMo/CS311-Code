@@ -1,5 +1,7 @@
-#PseudoCode
-Devide & conquer:
+##PseudoCode
+
+
+Devide & conquer: (top-down approach)
 Algorithm factorial(n): 
     if n <= 1:
         return 1
@@ -8,7 +10,7 @@ Algorithm factorial(n):
         result <- n * factorial(k)
         return result
 
-Dyanmic programming:
+Dyanmic programming: (bottom-top approach)
 Algorithm factorial(n):
     if n <= 1:
         return 1
