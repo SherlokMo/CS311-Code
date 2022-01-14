@@ -18,5 +18,5 @@
 		return -1
 
     Space O(1)
-    Time  O(log(Ng))
+    Time  O(log(N))
 ```
