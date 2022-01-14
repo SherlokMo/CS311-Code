@@ -52,9 +52,4 @@ General solution for task 1 in slide 2
 
     Space O(1)
     Time  O(n)
-            
-
-        
-
-
 ```
