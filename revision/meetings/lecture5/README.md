@@ -58,10 +58,11 @@ Resource for solving technique: [Open Link](https://www.geeksforgeeks.org/kruska
         while queue is not empty do
             currentVertex <- Pop from queue
             output(currentVertex)
-            for currentVertex.neighbours as node do
-                if visitedMap[node] is nil then
-                    visitedMap[node] <- true
-                    Push node in queue
+            for currentVertex.neighbours as vertex do
+                if visitedMap[vertex] is nil then
+                    visitedMap[vertex] <- true
+                    Push vertex in queue
+                    Insert vertex to spanningTree
     
     Complexity analysis:
         V stands for the number of vertices in our graph
