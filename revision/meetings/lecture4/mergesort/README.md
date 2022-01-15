@@ -26,3 +26,10 @@
         Space: O(nlog(n))
         Time:  O(nlog(n))
 ```
+
+# Quick Sort 
+Quick sort uses a random pivot to split the array there are several ways to chose it:
+  * Always pick first element as pivot. 
+  * Always pick last element as pivot (implemented below).
+  * Pick a random element as pivot.
+  * Pick median as pivot.
