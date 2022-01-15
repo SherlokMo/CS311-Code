@@ -12,7 +12,7 @@ A Graph consists of **Vertices** and **Edges** which will later be called an `V 
 ```
     struct node<Type> {
         val        <Type>
-        neighbours Array<node<Type>> 
+        neighbours Array<*node<Type>> 
     }
 ```
 
