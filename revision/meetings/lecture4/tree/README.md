@@ -9,10 +9,10 @@ A tree is can be simplified as a pair of nodes that has pointers to another node
 ```
 
 # Node structure
-The node can be expressed with 3 things (In case of a binary tree)
-    * value of the node
-    * left pointer to another node
-    * right pointer to the right node
+The node can be expressed with 3 things (In case of a binary tree). </br>
+* value of the node
+* left pointer to another node
+* right pointer to the right node
 ```
     struct node {
         val       int|string|hashmap|...|any #any datatype
@@ -23,9 +23,9 @@ The node can be expressed with 3 things (In case of a binary tree)
 
 # Binary tree
 A binary tree in which each node has at least two children. <br/>
-    * A tree in which each node has precisely two children. (Every sub-tree should follow).
-    * Binary trees are recursive that means that each sub-tree should also contain atmost 2 childrens.
-    * Binary trees could be not symmetrical.
+* A tree in which each node has precisely two children. (Every sub-tree should follow).
+* Binary trees are recursive that means that each sub-tree should also contain atmost 2 childrens.
+* Binary trees could be not symmetrical.
 
 # Binary search tree (BST)
 Binary search tree is a special condition of binary trees as it points to nodes in order. this mean that a binary search tree the `left < root < right` example: `25<50<65` in which we can search for numbers/strings easily inside it with time complexity of *O(log(N))* logarithmic function.
