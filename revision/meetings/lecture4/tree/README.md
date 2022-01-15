@@ -22,7 +22,7 @@ The node can be expressed with 3 things (In case of a binary tree)
 ```
 
 # Binary tree
-A binary tree in which each node has at least two children.
+A binary tree in which each node has at least two children. <br/>
     * A tree in which each node has precisely two children. (Every sub-tree should follow).
     * Binary trees are recursive that means that each sub-tree should also contain atmost 2 childrens.
     * Binary trees could be not symmetrical.
