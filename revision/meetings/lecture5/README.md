@@ -19,7 +19,7 @@ A Graph consists of **Vertices** and **Edges** which will later be called an `V 
 # Traversal
 We can traverse a graph in multiple ways like: <br/>
 * BFS (Breadth-first search)
-* DFS (Depth-first search)
+* DFS (Depth-first search)  </br>
 But we have to note that in certain problems we should traverse our graph in a specific way such as `Greeady algorithms`, if we are looking for a minumum weight there should be some constrains.
 
 # What are spanning trees?
