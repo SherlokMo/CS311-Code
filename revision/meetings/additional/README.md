@@ -11,4 +11,8 @@
                     return i
             
             return nil
+
+        Complexity:
+            Space: O(1)
+            Time:  O(n)
     ```
