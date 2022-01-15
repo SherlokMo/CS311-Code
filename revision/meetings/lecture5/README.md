@@ -6,7 +6,7 @@ A graph is simply a Node with a pointer to another Node. When these Nodes combin
         |           |
         25->5->2->50
 ```
-A Graph consists of **Vertices** and **Edges** which will later be called an `V and E` So we can represent at out Graph to be `G=(V,E)` an **undirected connected graph**. 
+A Graph consists of **Vertices** and **Edges** which will later be called an `V and E` So we can represent our Graph to be `G=(V,E)` an **undirected connected graph**. 
 
 # Simple structure for a Graph
 ```
