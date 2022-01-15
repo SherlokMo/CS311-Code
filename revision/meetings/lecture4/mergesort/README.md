@@ -23,7 +23,7 @@
         return S
 
     Complexity:
-        Space: O(nlog(n))
+        Space: O(n)
         Time:  O(nlog(n))
 ```
 
