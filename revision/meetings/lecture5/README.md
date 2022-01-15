@@ -34,3 +34,43 @@ In minimum-cost spanning tree we can observe that we are using `Greeady Algorith
 Greeady algorithm is concerned by selecting the minimum local optimum at each step to find a global optimum. which is what we want in this type of problem. Let's get back to our two famouse algorithms: </br>
 * Kruskal's Algorithm (consists of edges only)
 * Prime's Algorithm   (consists of nodes & edges)
+
+# Prime's Algorithm
+Start with any node in the graph, and repeatedly choose the minmum weight to add it. This node should point to another node that is has not been chosen earlier.<br/>
+Resource for studying: [Open Link](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)
+
+# Kruskal Algorithm
+Start with **no node or edges** and repeatedly add the minimum weight that does not creat a cycle. <br/>
+Resource for solving technique: [Open Link](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)
+
+## Pseudo codes
+
+# Breadth first search for finding spanning trees
+```
+    Algorithm BFST(V)
+        Input: Vertices V
+        Output: Spanning tree
+
+        declear queue, visitedMap
+
+        Push V in queue
+        visitedMap[V] <- true
+        while queue is not empty do
+            currentVertex <- Pop from queue
+            output(currentVertex)
+            for currentVertex.neighbours as node do
+                if visitedMap[node] is nil then
+                    visitedMap[node] <- true
+                    Push node in queue
+    
+    Complexity analysis:
+        V stands for the number of vertices in our graph
+        Space: O(V)
+        Time:  O(V+E)
+```
+In case of adjency matrix in a graph the complexity changes to:
+```
+    Space: O(N)
+    Time:  O(N^2)
+```
+**an adjacency matrix is a square matrix used to represent a finite graph**
