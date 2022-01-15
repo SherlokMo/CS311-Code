@@ -32,7 +32,7 @@ Binary search tree is a special condition of binary trees as it points to nodes 
 ```
                 50
             25       60
-        10     27  40   65   
+        10     27  55   65   
 ```
 
 If we want to search for number "10", we can access it through `50>25>10`. <br/>
