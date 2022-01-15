@@ -74,3 +74,27 @@ In case of adjency matrix in a graph the complexity changes to:
     Time:  O(N^2)
 ```
 **an adjacency matrix is a square matrix used to represent a finite graph**
+
+# DFST (Depth First Search And Traversal)
+I'm going to implement this pseudo code in **Recursive Approach**, but it could also be solved using normal `Stack` datastructure like the above problem but instead of queue we use **Stack**.
+```
+    Algoithm DFST(V, visited)
+        Input: V is the start vertex, visited is the visited vertices.
+        Output: spanning tree
+
+        for V.neighbours as vertex do
+            if visited[vertex] is nil then
+                visited[vertex] <- true
+                DFST[vertex, visited]
+                Insert vertex to spanningTree
+    
+    Complexity:
+        Space: O(V)
+        Time:  O(V+E)
+```
+
+In case of adjency matrix in a graph the complexity changes to:
+```
+    Space: O(N)
+    Time:  O(N^2)
+```
