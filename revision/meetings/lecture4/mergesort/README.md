@@ -33,3 +33,28 @@ Quick sort uses a random pivot to split the array there are several ways to chos
   * Always pick last element as pivot (implemented below).
   * Pick a random element as pivot.
   * Pick median as pivot.
+
+Quick sort complexity changes by chosing a better pivot.
+    * If we choose the middle element we could end-up with the perfect pivot and the analysis could be O(nlog(n)), But in worst case scenrios our time complexity would be O(N^2)
+
+# Quick Sort pseudo code
+
+```
+    Algorithm quickSort(Arr, n)
+        Input: Array arr of n slots.
+        Output: Sorted array
+
+        if n <= 1 then
+            return arr
+        
+        pivot = arr[n - 1]
+        (LittleHalf, BiggerHalf) <- Parition(Arr, n, pivot)
+
+        sortedArr <- merge(quickSort(LittleHalf, LittleHalf.size), pivot, quickSort(BiggerHalf, BiggerHalf.size))
+
+        return sortedArr
+    
+    Complexity (worst-case): 
+        Space: O(n)
+        Time:  O(n^2)
+```
