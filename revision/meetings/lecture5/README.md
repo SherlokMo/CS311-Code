@@ -11,8 +11,8 @@ A Graph consists of **Vertices** and **Edges** which will later be called an `V 
 # Simple structure for a Graph
 ```
     struct node<Type> {
-        val   <Type>
-        Edges Array<node<Type>> 
+        val        <Type>
+        neighbours Array<node<Type>> 
     }
 ```
 
