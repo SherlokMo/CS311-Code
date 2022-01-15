@@ -28,7 +28,7 @@ A binary tree in which each node has at least two children.
     * Binary trees could be not symmetrical.
 
 # Binary search tree (BST)
-Binary search tree is a special condition of binary trees as it points to nodes in order. this mean that a binary search tree the left < root < right (ex: 25<50<65) in which we can search for numbers/strings easily inside it with time complexity of *O(log(N))* logarithmic function.
+Binary search tree is a special condition of binary trees as it points to nodes in order. this mean that a binary search tree the `left < root < right` example: `25<50<65` in which we can search for numbers/strings easily inside it with time complexity of *O(log(N))* logarithmic function.
 ```
                 50
             25       60
