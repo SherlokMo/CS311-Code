@@ -73,7 +73,7 @@ Different traversing: <br/>
 Let's assume our node data structure is this:
 ```
     struct Node {
-        val any
+        val   any
         right *Node
         left  *Node
     }
