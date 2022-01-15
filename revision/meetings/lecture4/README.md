@@ -1,5 +1,5 @@
 ## Topics
 
-* [Merge Sort](mergesort/README.md)
+* [Merge Sort](mergesort)
 * [Tree datastructure & traversal methods](tree/README.md)
 
