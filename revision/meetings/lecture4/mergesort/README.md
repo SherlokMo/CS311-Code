@@ -1,7 +1,7 @@
 # Important note
 * Merge Sort divide the array into two halfes in n/2 ratio while quick sort splits the array into any ratio based on the pivot.
 * Merge Sort worst case is O(nlog(n)) while quick sort worst case is O(n^2)
-* Merge Sort is prefered in large datasets and particularry on LinkedLists. while quick sort works better on minimum dataset.
+* Merge Sort is prefered in large datasets and the best way to sort an LinkedLists. while quick sort works better on minimum dataset.
 * Merge Sort adds a new array to store the sorted array, quick sort sorts the array in place. 
 
 
