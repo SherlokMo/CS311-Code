@@ -39,7 +39,7 @@ Below is a pseudocode for general greedy method
 Examples of most common greedy algorithm problems: <br/>
 * [Minimum spanning tree](#what-are-spanning-trees)
 * [Knapsack problem](#01-knapsack-problem-definition-and-solution)
-* [Job sequencing with deadlines]
+* [Job sequencing with deadlines](#job-shceduling-with-deadlines)
 
 # What are spanning trees?
 A spanning tree is a Sub graph let's denote it by `t=(V,E)`. It's a subset of the main graph but it has no cycles. But why do we need them? <br/>
@@ -161,7 +161,7 @@ The **knapsack problem** or **rucksack (bag) problem** is a problem in combinato
     - weight are non-negative
     - Items are listed in an increasing order of weight
 - Solutions:
-  - Greedy Solution (not the best/correct way to solve 0/1 knapsack)
+  - Greedy Solution (not the best/Optimal way to solve 0/1 knapsack)
     ```
         Algorithm knapSack(items, n, w)
             Input: Items of n size and maximum weight of the bag as w
@@ -206,3 +206,5 @@ The **knapsack problem** or **rucksack (bag) problem** is a problem in combinato
                 Space: O(n)
                 Time:  O(n^2)
         ```
+
+# Job shceduling with deadlines
