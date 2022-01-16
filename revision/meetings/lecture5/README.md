@@ -161,7 +161,7 @@ The **knapsack problem** or **rucksack (bag) problem** is a problem in combinato
     - weight are non-negative
     - Items are listed in an increasing order of weight
 - Solutions:
-  - Greedy Solution (not the best/correct way to solve 0/1 knapsack)
+  - Greedy Solution (not the best/correct way to solve 0/1 knapsack) <br>
         ```
             Algorithm knapSack(items, n, w)
                 Input: Items of n size and maximum weight of the bag as w
