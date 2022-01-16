@@ -19,7 +19,7 @@
 
 * bubble sort
 ```
-    Algorithm buubleSort(arr, n)
+    Algorithm bubbleSort(arr, n)
         Input: Array arr of n size
         Output sorted array
 
@@ -33,4 +33,25 @@
     Complexity:
         Space: O(1)
         Time:  O(n^2) 
+```
+* Insertion sort
+```
+    Algorithm insertionSort(arr, n)
+        Input: Array arr of n size
+        Output sorted array
+
+        for i <- 1 to n - 1 do
+            temp <- arr[i]
+
+            j <- i - 1
+            while j >= 0 and arr[j] > temp do
+                arr[j + 1] <- arr[j]
+                j <- j - 1
+            
+            arr[i] <- temp
+        return arr
+
+    Complexity:
+        Space: O(1)
+        Time:  O(n^2)
 ```
