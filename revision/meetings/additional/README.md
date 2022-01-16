@@ -26,7 +26,7 @@
         for i <- 0 to n - 1 do
             for j <- 0 to n - i - 1 do
                 if arr[j] > arr[j + 1]  then
-                    swap array[j] with arr[j + 1]
+                    swap array[j] between arr[j + 1]
 
         return arr
 
