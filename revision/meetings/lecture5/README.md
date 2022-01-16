@@ -180,7 +180,7 @@ The **knapsack problem** or **rucksack (bag) problem** is a problem in combinato
         Complexity:
             Space: O(1)
             Time:  O(n)
-    ``` 
+    ``` <br/>
     - DP (Dyanmic Programming) solution:
       - We will construct a temporary array denoted by dp[][] a 2-D Array in **bottom-up manner**.
       - Our Answer will be at dp[i][j] (Last index).
@@ -206,3 +206,4 @@ The **knapsack problem** or **rucksack (bag) problem** is a problem in combinato
                 Space: O(n)
                 Time:  O(n^2)
         ```
+    
