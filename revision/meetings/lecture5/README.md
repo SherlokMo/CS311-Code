@@ -208,3 +208,45 @@ The **knapsack problem** or **rucksack (bag) problem** is a problem in combinato
         ```
 
 # Job shceduling with deadlines
+The sequencing of jobs on a single processor with deadline constraints is called as Job Sequencing with Deadlines. 
+* You are given a set of jobs.
+* Each job has a defined deadline and some profit associated with it.
+* The profit of a job is given only when that job is completed within its deadline.
+* Only one processor is available for processing all the jobs.
+* Processor takes one unit of time to complete a job.
+<br/>
+Approach to solve:
+* A feasible solution would be a subset of jobs where each job of the subset gets completed within its deadline.
+* Value of the feasible solution would be the sum of profit of all the jobs contained in the subset.
+* An optimal solution of the problem would be a feasible solution which gives the maximum profit.
+* Note that the set should be sorted if it was in the inputs unsorted we shall sort it in decreasing order of it's profit.
+<br/>
+```
+    --------------------------------------------------
+    | jobs      | 1    | 2   | 3   | 4   | 5   | 6   |
+    | Deadlines | 5    | 3   | 3   | 2   | 4   | 2   |
+    | Profits   | 200  | 180 | 190 | 300 | 120 | 100 |
+    |-------------------------------------------------
+```
+```
+    Algorithm jobSequencing(jobs, n)
+        Input: Array of jobs, n size of the jobs
+        Output: maximum profit job sequence
+
+        sort(jobs, n) #Typically takes O(nlog(n)) using merge/quick sort
+        declear results array of size n
+        slots <- fill array of size n with boolean value of false
+        for i <- 0 to n - 1 do
+            for j <- minimumOf(n, jobs[i].deadline) decrease until 0 do
+                if slots[j] is false then
+                    result[j] <- i
+                    slots[j]  <- true
+                    exist this nested loop
+        
+        return results
+
+    Complexity:
+        Space: O(n) # Auxiliary Space used by extra arrays
+        Time:  O(n^2)  # It can be optimized using Priority Queue(max heap).
+```
+
