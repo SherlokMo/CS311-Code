@@ -32,5 +32,5 @@
 
     Complexity:
         Space: O(1)
-        Time:  O(n) 
+        Time:  O(n^2) 
 ```
