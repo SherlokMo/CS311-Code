@@ -55,3 +55,24 @@
         Space: O(1)
         Time:  O(n^2)
 ```
+
+* Selection sort
+
+```
+    Algorithm selectionSort(Arr, n)
+        Input: Array arr of n size
+        Output: Sorted array
+
+        for i <- 0 to n - 2 do
+            minIdx <- i
+            for j <- i + 1 to n - 1 do
+                if arr[j] < arr[minIdx] then
+                    minIdx <- j
+            swap between arr[i], arr[minIdx]
+
+        return arr
+
+    Complexity:
+        Space: O(1)
+        Time:  O(n^2)
+```
