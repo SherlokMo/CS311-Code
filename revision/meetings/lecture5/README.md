@@ -182,4 +182,27 @@ The **knapsack problem** or **rucksack (bag) problem** is a problem in combinato
             Time:  O(n)
     ``` 
     - DP (Dyanmic Programming) solution:
-      - 
+      - We will construct a temporary array denoted by dp[][] a 2-D Array in **bottom-up manner**.
+      - Our Answer will be at dp[i][j] (Last index).
+        ```
+            Algorithm knapSackDP(vals, weights, n, w)
+                Input: values, weights of n size and maximum weight of the bag as w
+                Output: maximum value that can be put in a knapsack of weight w
+
+                declear dp[n][w]
+
+                for i <- 0 to n-1 do 
+                    for j <- 0 to w - 1 do
+                        if i = 0 or j = 0 then
+                            dp[i][j] <- 0
+                        elsif weights[i - 1] <= w then
+                            dp[i][j] <- max(values[i - 1] + dp[i-1][w - weights[i - 1]], dp[i - 1][w])
+                        else
+                            dp[i][j] = dp[i - 1][w]
+
+                return dp[n - 1][w - 1]
+           
+            Complexity:
+                Space: O(n)
+                Time:  O(n^2)
+        ```
