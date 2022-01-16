@@ -29,7 +29,7 @@ We need spanning trees when we want to:
 * Connect telephone lines
 We can observe that our objective is to connect links together without having a cycle as not to waste **resources**. Minimum spanning trees have direct applications in the design of networks, including computer networks, telecommunications networks, transportation networks, water supply networks, and electrical grids.
 
-# Famouse Algorithms for finding minimum-cost spanning tree
+# Famous Algorithms for finding minimum-cost spanning tree
 In minimum-cost spanning tree we can observe that we are using `Greeady Algorithm`.. but why? <br/>
 Greeady algorithm is concerned by selecting the minimum local optimum at each step to find a global optimum. which is what we want in this type of problem. Let's get back to our two famouse algorithms: </br>
 * Kruskal's Algorithm (consists of edges only)
