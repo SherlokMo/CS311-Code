@@ -221,14 +221,13 @@ Approach to solve:
 * An optimal solution of the problem would be a feasible solution which gives the maximum profit.
 * Note that the set should be sorted if it was in the inputs unsorted we shall sort it in decreasing order of it's profit.
 <br/>
-```
-    --------------------------------------------------
-    | jobs      | 1    | 2   | 3   | 4   | 5   | 6   |
-    | Deadlines | 5    | 3   | 3   | 2   | 4   | 2   |
-    | Profits   | 200  | 180 | 190 | 300 | 120 | 100 |
-    |-------------------------------------------------
-```
-<br/>
+
+| Jobs | #1 | #2 | #3 | #4 | #5 | #6 |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| Deadlines | 5 | 3 | 3 | 2 | 4 | 2 |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| Profits | 200 | 180 | 190 | 300 | 120 | 100 |
+
 ```
     Algorithm jobSequencing(jobs, n)
         Input: Array of jobs, n size of the jobs
