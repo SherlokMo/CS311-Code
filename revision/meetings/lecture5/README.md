@@ -22,6 +22,25 @@ We can traverse a graph in multiple ways like: <br/>
 * DFS (Depth-first search)  </br>
 But we have to note that in certain problems we should traverse our graph in a specific way such as `Greeady algorithms`, if we are looking for a minumum weight there should be some constrains.
 
+# Greedy algorithm
+The main approach to implement greedy method is to: <br/>
+Below is a pseudocode for general greedy method
+```
+    Algorithm greedy(a, n)
+        Input: A array/tree/graph with n nodes
+        Output: the optimal (feasible) solution
+
+        solution <- 0
+        For i <- 0 to n - 1 do
+            if feasible(solution, a[i]) then
+                solution <- solution + a[i]
+        return solution 
+```
+Examples of most common greedy algorithm problems: <br/>
+* [Minimum spanning tree](#what-are-spanning-trees)
+* [Knapsack problem](#01-knapsack-problem-definition-and-solution)
+* [Job sequencing with deadlines]
+
 # What are spanning trees?
 A spanning tree is a Sub graph let's denote it by `t=(V,E)`. It's a subset of the main graph but it has no cycles. But why do we need them? <br/>
 We need spanning trees when we want to:
@@ -132,3 +151,35 @@ Depending on how the algorithm is implemented and what data structure are used t
         Time:  O(E*Log(V))
 ```
 
+# 0/1 Knapsack problem definition and solution
+The **knapsack problem** or **rucksack (bag) problem** is a problem in combinatorial optimization. Given a set of items each with a **mass** and a **value** determine the number of each item to include in a collection so that the total weight is **less than or equal** to a given limit and the total value is **as large as possible**. <br />
+**Improtant note: In 0/1 KnapSack we cannot divide our weights (take it all or leave it!)** </br>  
+- Definition: </br>
+    "Let there be n items, Z1 to Zn Where Zi has a value Vi and weight Wi, The maximum than we can carry in the bag is W"
+- Constrains: <br/>
+    - 0 < W < 250
+    - weight are non-negative
+    - Items are listed in an increasing order of weight
+- Solutions:
+  - Greedy Solution (not the best/correct way to solve 0/1 knapsack)
+    ```
+        Algorithm knapSack(items, n, w)
+            Input: Items of n size and maximum weight of the bag as w
+            Output: maximum value that can be put in a knapsack of weight w
+            // since our items are listed in an increasing order of weight then we can iterate over it
+            // from the end of the list
+            currentWeight <- 0
+            currentValue  <- 0
+            for i <- n - 1 to 0 do
+                if (w - currentWeight) > items[i].weight then
+                    currentWeight <- currentWeight + items[i].weight
+                    currentValue  <- currentValue + items[i].value
+            
+            return currentValue
+        
+        Complexity:
+            Space: O(1)
+            Time:  O(n)
+    ``` 
+    - DP (Dyanmic Programming) solution:
+      - 
