@@ -105,8 +105,8 @@ Dijkstra’s algorithm is very similar to Prim’s algorithm for minimum spannin
 Depending on how the algorithm is implemented and what data structure are used the time complexity is typically **O(E*Log(V))** which is competitive against other shortest path algorithms. Dijkstra algorithm finds the minimum distance between every vertex from the start node. </br>
 
 ```
-    Algorithm dijkstra(g, v, s, e)
-        Input: g an adjacency list of the weighted graph that has V nodes, starts from S node, and the end node is e
+    Algorithm dijkstra(g, v, s)
+        Input: g an adjacency list of the weighted graph that has V nodes, starts from S node
         Output: Shortest distance
 
         declear visited, priorityQueue
