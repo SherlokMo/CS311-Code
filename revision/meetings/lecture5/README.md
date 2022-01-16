@@ -228,6 +228,7 @@ Approach to solve:
     | Profits   | 200  | 180 | 190 | 300 | 120 | 100 |
     |-------------------------------------------------
 ```
+<br/>
 ```
     Algorithm jobSequencing(jobs, n)
         Input: Array of jobs, n size of the jobs
