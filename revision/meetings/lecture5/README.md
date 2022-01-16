@@ -99,3 +99,36 @@ In case of adjency matrix in a graph the complexity changes to:
     Space: O(N)
     Time:  O(N^2)
 ```
+
+# Dijkstra Shortest Path algorithm
+Dijkstra’s algorithm is very similar to Prim’s algorithm for minimum spanning tree. Like Prim’s MST, we generate a SPT (shortest path tree) with a given source as a root. We maintain two sets, one set contains vertices included in the shortest-path tree, other set includes vertices not yet included in the shortest-path tree. At every step of the algorithm, we find a vertex that is in the other set (set of not yet included) and has a minimum distance from the source. <br />
+Depending on how the algorithm is implemented and what data structure are used the time complexity is typically **O(E*Log(V))** which is competitive against other shortest path algorithms. Dijkstra algorithm finds the minimum distance between every vertex from the start node. </br>
+
+```
+    Algorithm dijkstra(g, v, s, e)
+        Input: g an adjacency list of the weighted graph that has V nodes, starts from S node, and the end node is e
+        Output: Shortest distance
+
+        declear visited, priorityQueue
+        distances <- fill array of V size with infinity value 
+        distances[s] <- 0
+        Insert (s, 0) to priorityQueue
+        while priorityQueue is not empty do
+            index, minValue <- pull from priorityQueue
+            visited[index] <- true
+            if distances[index] < minValue then
+                exit this iteration and continue
+            for g[index] as edge do 
+                if visited[edge.to] then
+                    exit this iteration and continue
+                newDistance <- distances[index] + edge.cost
+                if newDistance < distances[edge.to]
+                    distances[edge.to] <- newDistance
+                    Insert (edge.to, newDistance) to priorityQueue
+        return distances
+
+    Complexity:
+        Space: O(V)
+        Time:  O(E*Log(V))
+```
+
