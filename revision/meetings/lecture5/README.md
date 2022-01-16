@@ -214,12 +214,11 @@ The sequencing of jobs on a single processor with deadline constraints is called
 * The profit of a job is given only when that job is completed within its deadline.
 * Only one processor is available for processing all the jobs.
 * Processor takes one unit of time to complete a job.
-<br/>
-Approach to solve:
-* A feasible solution would be a subset of jobs where each job of the subset gets completed within its deadline.
-* Value of the feasible solution would be the sum of profit of all the jobs contained in the subset.
-* An optimal solution of the problem would be a feasible solution which gives the maximum profit.
-* Note that the set should be sorted if it was in the inputs unsorted we shall sort it in decreasing order of it's profit.
+* Approach to solve:
+  - A feasible solution would be a subset of jobs where each job of the subset gets completed within its deadline.
+  - Value of the feasible solution would be the sum of profit of all the jobs contained in the subset.
+  - An optimal solution of the problem would be a feasible solution which gives the maximum profit.
+  - Note that the set should be sorted if it was in the inputs unsorted we shall sort it in decreasing order of it's profit.
 
 | Jobs | #1 | #2 | #3 | #4 | #5 | #6 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
