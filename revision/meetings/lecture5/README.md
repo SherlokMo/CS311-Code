@@ -219,12 +219,12 @@ The sequencing of jobs on a single processor with deadline constraints is called
   - Value of the feasible solution would be the sum of profit of all the jobs contained in the subset.
   - An optimal solution of the problem would be a feasible solution which gives the maximum profit.
   - Note that the set should be sorted if it was in the inputs unsorted we shall sort it in decreasing order of it's profit.
-
+<center>
 | Jobs | #1 | #2 | #3 | #4 | #5 | #6 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | Deadlines | 5 | 3 | 3 | 2 | 4 | 2 |
 | Profits | 200 | 180 | 190 | 300 | 120 | 100 |
-
+</center>
 ```
     Algorithm jobSequencing(jobs, n)
         Input: Array of jobs, n size of the jobs
