@@ -220,7 +220,6 @@ Approach to solve:
 * Value of the feasible solution would be the sum of profit of all the jobs contained in the subset.
 * An optimal solution of the problem would be a feasible solution which gives the maximum profit.
 * Note that the set should be sorted if it was in the inputs unsorted we shall sort it in decreasing order of it's profit.
-<br/>
 
 | Jobs | #1 | #2 | #3 | #4 | #5 | #6 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
