@@ -3,6 +3,7 @@
 * Problems
   * [Travelling sales person (TSP)](#travelling-sales-person)
   * [Subset Sum](#subset-sum)
+  * [Longest Increasing subsequence](#longest-increasing-subsequence)
 
 # Travelling sales person
 Solving travelling sales man in backtracking approach requires an understanding of Hamilition cycle. So.. what is hamilition cycle exactly? <br/>
@@ -63,5 +64,35 @@ Let sum wanted to reach is 8 and we have a set [1, 3, 4, 5] We want to have a se
     
   Complexity:
     Space: O(N)
+    Time:  O(2^N)
+```
+
+# Longest-increasing subsequence
+Given an integer array `nums`, return the length of the longest strictly increasing subsequence. </br>
+A subsequence is a sequence that can be derived from an array by deleting some or no elements without changing the order of the remaining elements. For example, `[3,6,2,7]` is a subsequence of the array `[0,3,1,6,2,2,7]`.
+
+```
+Input: nums = [10,9,2,5,3,7,101,18]
+Output: 4
+Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.
+```
+
+```
+  global max <- 1
+
+  Algorithm LIS(arr, n, i, prev)
+    if n = i then
+      return 0
+
+    excluded <- LIS(arr, n, i+1, prev)
+
+    included <- 0
+    if arr[i] > prev then
+      include <- 1 + LIS(arr, n, i+1, arr[i])
+
+    return max(included, excluded)
+
+  Complexity:
+    Space: O(n)
     Time:  O(2^N)
 ```
