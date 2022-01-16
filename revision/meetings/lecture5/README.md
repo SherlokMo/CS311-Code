@@ -237,7 +237,7 @@ Approach to solve:
         declear results array of size n
         slots <- fill array of size n with boolean value of false
         for i <- 0 to n - 1 do
-            for j <- minimumOf(n, jobs[i].deadline) decrease until 0 do
+            for j <- minimumOf(n - 1, jobs[i].deadline) decrease until 0 do
                 if slots[j] is false then
                     result[j] <- i
                     slots[j]  <- true
