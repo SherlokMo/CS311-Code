@@ -57,10 +57,53 @@ Greeady algorithm is concerned by selecting the minimum local optimum at each st
 # Prime's Algorithm
 Start with any node in the graph, and repeatedly choose the minmum weight to add it. This node should point to another node that is has not been chosen earlier.<br/>
 Resource for studying: [Open Link](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)
+```
+    1. Select an edge with minimum cost and include it in the spanning tree
+    2. Among all the edges which are ajacent with the selected edge, select the one with minimum cost
+    3. Repeat step 2 until 'n' vertices and 'n-1' edges are included. and the sub graph obtained does not contain any cycle.
+
+    Algorithm prime(E, T)
+        Input: E set of edges adjacent to start node inside T, T spanning tree with a single node (start node)
+        Output: minimum spanning tree
+
+        while T does not contain all vertices
+            (v, w) <- pull from E with lowest cost
+            if w is already in T then
+                discard (v, w)
+            else
+                add (v, w) to T
+                add to E the edges adjacent to w
+        
+        return T
+
+    Complexity:
+        Space: O(V)
+        Time:  O((V+E)*log(V))
+```
 
 # Kruskal Algorithm
 Start with **no node or edges** and repeatedly add the minimum weight that does not creat a cycle. <br/>
 Resource for solving technique: [Open Link](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)
+
+```
+    Algorithm kruskal(E, V)
+        Input: E set of edges, V number of vertices in the graph
+        Output: Min-cost spanning tree
+        
+        declear T empty spanning tree
+        while T is less than v-1 edges do
+            (v, w) <- pull from E with lowest cost
+            if isCyclic(E, v, w) is true then
+                discard (v, w)
+            else
+                add (v, w) to T
+        
+        return T
+    
+    Complexity: 
+        Space: O(V)
+        Time:  O(E*log V)
+```
 
 ## Pseudo codes
 
