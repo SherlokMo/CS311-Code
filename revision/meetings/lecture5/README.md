@@ -162,25 +162,25 @@ The **knapsack problem** or **rucksack (bag) problem** is a problem in combinato
     - Items are listed in an increasing order of weight
 - Solutions:
   - Greedy Solution (not the best/correct way to solve 0/1 knapsack)
-    ```
-        Algorithm knapSack(items, n, w)
-            Input: Items of n size and maximum weight of the bag as w
-            Output: maximum value that can be put in a knapsack of weight w
-            // since our items are listed in an increasing order of weight then we can iterate over it
-            // from the end of the list
-            currentWeight <- 0
-            currentValue  <- 0
-            for i <- n - 1 to 0 do
-                if (w - currentWeight) >= items[i].weight then
-                    currentWeight <- currentWeight + items[i].weight
-                    currentValue  <- currentValue + items[i].value
+        ```
+            Algorithm knapSack(items, n, w)
+                Input: Items of n size and maximum weight of the bag as w
+                Output: maximum value that can be put in a knapsack of weight w
+                // since our items are listed in an increasing order of weight then we can iterate over it
+                // from the end of the list
+                currentWeight <- 0
+                currentValue  <- 0
+                for i <- n - 1 to 0 do
+                    if (w - currentWeight) >= items[i].weight then
+                        currentWeight <- currentWeight + items[i].weight
+                        currentValue  <- currentValue + items[i].value
+                
+                return currentValue
             
-            return currentValue
-        
-        Complexity:
-            Space: O(1)
-            Time:  O(n)
-    ``` <br/>
+            Complexity:
+                Space: O(1)
+                Time:  O(n)
+        ```
     - DP (Dyanmic Programming) solution:
       - We will construct a temporary array denoted by dp[][] a 2-D Array in **bottom-up manner**.
       - Our Answer will be at dp[i][j] (Last index).
