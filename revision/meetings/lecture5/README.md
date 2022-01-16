@@ -171,7 +171,7 @@ The **knapsack problem** or **rucksack (bag) problem** is a problem in combinato
             currentWeight <- 0
             currentValue  <- 0
             for i <- n - 1 to 0 do
-                if (w - currentWeight) > items[i].weight then
+                if (w - currentWeight) >= items[i].weight then
                     currentWeight <- currentWeight + items[i].weight
                     currentValue  <- currentValue + items[i].value
             
