@@ -155,7 +155,7 @@ Depending on how the algorithm is implemented and what data structure are used t
 The **knapsack problem** or **rucksack (bag) problem** is a problem in combinatorial optimization. Given a set of items each with a **mass** and a **value** determine the number of each item to include in a collection so that the total weight is **less than or equal** to a given limit and the total value is **as large as possible**. <br />
 **Improtant note: In 0/1 KnapSack we cannot divide our weights (take it all or leave it!)** </br>  
 - Definition: </br>
-    "Let there be n items, Z1 to Zn Where Zi has a value Vi and weight Wi, The maximum than we can carry in the bag is W"
+    "Let there be n items, Z1 to Zn Where Zi has a value Vi and weight Wi, The maximum that we can carry in the bag is W"
 - Constrains: <br/>
     - 0 < W < 250
     - weight are non-negative
