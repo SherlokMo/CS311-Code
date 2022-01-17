@@ -47,7 +47,7 @@ Let sum wanted to reach is 8 and we have a set [1, 3, 4, 5] We want to have a se
     Input: Set witn n size, currentSet of the recursion, currentIdx: is the index in set, target is the sum left
     Output: subset of set that sum up to target
 
-    if sum = 0 then
+    if target = 0 then
       append currentSet in result
       backtrack to the root of this reccurance
     
